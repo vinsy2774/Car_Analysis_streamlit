@@ -71,6 +71,9 @@ if user_menu == 'Fuel wise Analysis':
     type_fuel = helper.fuel_type_bar(df)
     selected_fuel = st.selectbox('Choose the fuel type', type_fuel)
     res = helper.fetch_fuel_data(df, selected_fuel)
-    st.dataframe(res)
+    st.dataframe(res, hide_index=True)
+
+    st.(res, x='Fuel', y=['Price'])
+
 
 
