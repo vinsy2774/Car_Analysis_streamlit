@@ -73,7 +73,10 @@ if user_menu == 'Fuel wise Analysis':
     res = helper.fetch_fuel_data(df, selected_fuel)
     st.dataframe(res, hide_index=True)
 
-    st.(res, x='Fuel', y=['Price'])
+    
+
+
+
 
 
 
